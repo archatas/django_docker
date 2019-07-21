@@ -31,7 +31,7 @@ OperationalError at /admin/
 FATAL:  role "myproject" does not exist
 ```
 
-This means that you have to create the user and the database in the Docker container.
+This means that you have to create the database user and the database in the Docker container.
 
 ## 4. Create database user and project database
 
@@ -43,6 +43,8 @@ $ docker exec -it django_docker_db_1 bash
 /$ createuser --createdb --password myproject
 /$ createdb --username myproject myproject
 ```
+
+When asked, enter the same password for the database as in the `build_local.sh` script.
 
 Press [Ctrl + D] twice to logout of the postgres user and Docker container.
 
@@ -66,6 +68,8 @@ $ docker exec -it django_docker_gunicorn_1 bash
 /usr/src/myproject# python manage.py collectstatic
 /usr/src/myproject# python manage.py createsuperuser
 ```
+
+Answer all the questions asked by the management commands.
 
 Press [Ctrl + D] twice to logout of the Docker container.
 
@@ -99,3 +103,7 @@ docker-compose logs db
 ## 8. Create analogous scripts for staging, production, and test environments
 
 Copy `build_local.sh` to `build_staging.sh`, `build_production.sh`, and `build_test.sh` and change the environment variables analogously.
+
+## 9. Feedback
+
+If you have any feedback about the boilerplate code or this README file, please open new issues.
