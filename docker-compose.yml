@@ -7,19 +7,19 @@ services:
       - "80:80"
     volumes:
       - ./config/nginx/conf.d:/etc/nginx/conf.d
-      - static_volume:/usr/src/myproject/static
-      - media_volume:/usr/src/myproject/media
+      - static_volume:/home/myproject/static
+      - media_volume:/home/myproject/media
     depends_on:
       - gunicorn
 
   gunicorn:
     build: .
-    command: bash -c "gunicorn --workers 3 --bind 0.0.0.0:8000 myproject.wsgi:application"
+    command: bash -c "/home/myproject/venv/bin/gunicorn --workers 3 --bind 0.0.0.0:8000 myproject.wsgi:application"
     depends_on:
       - db
     volumes:
-      - static_volume:/usr/src/myproject/static
-      - media_volume:/usr/src/myproject/media
+      - static_volume:/home/myproject/static
+      - media_volume:/home/myproject/media
     expose:
       - "8000"
     environment:

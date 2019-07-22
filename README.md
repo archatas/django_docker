@@ -95,9 +95,9 @@ $ docker exec -it django_docker_db_1 bash
 ### View logs
 
 ```bash
-docker-compose logs nginx
-docker-compose logs gunicorn
-docker-compose logs db
+$ docker-compose logs nginx
+$ docker-compose logs gunicorn
+$ docker-compose logs db
 ```
 
 ## 8. Create analogous scripts for staging, production, and test environments
