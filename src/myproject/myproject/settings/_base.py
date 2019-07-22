@@ -35,7 +35,10 @@ SECRET_KEY = get_secret('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "0.0.0.0",
+]
 
 
 # Application definition
@@ -135,8 +138,3 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media')
-
-ALLOWED_HOSTS = [
-    "127.0.0.1",
-    "0.0.0.0",
-]
