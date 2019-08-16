@@ -138,7 +138,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+with open(os.path.join(BASE_DIR, 'settings', 'last-update.txt'), 'r') as f:
+    timestamp = f.readline().strip()
+
+STATIC_URL = f'/static/{timestamp}/'
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 
 MEDIA_URL = '/media/'

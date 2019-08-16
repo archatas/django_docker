@@ -3,18 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="5a17dd3a-3b72-49b1-acb7-30e640e97554" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myproject/myproject/apps/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/myproject/myproject/apps/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myproject/myproject/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/myproject/myproject/settings/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myproject/myproject/settings/local.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/myproject/myproject/settings/local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myproject/myproject/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/myproject/myproject/settings/production.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myproject/myproject/settings/staging.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/myproject/myproject/settings/staging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myproject/myproject/settings/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/myproject/myproject/settings/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,17 +41,17 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/myproject/myproject/templates" />
-      <recent name="$PROJECT_DIR$/src/myproject/myproject/settings" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/myproject" />
       <recent name="$PROJECT_DIR$/config/nginx/conf.d" />
+      <recent name="$PROJECT_DIR$/src/myproject/myproject/settings" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/myproject/myproject/templates" />
       <recent name="$PROJECT_DIR$/src/myproject/myproject/settings" />
     </key>
   </component>
@@ -117,6 +114,7 @@
       <workItem from="1564197794606" duration="2371000" />
       <workItem from="1565218386290" duration="287000" />
       <workItem from="1565576375080" duration="1747000" />
+      <workItem from="1565985606715" duration="3208000" />
     </task>
     <servers />
   </component>
