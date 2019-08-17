@@ -132,7 +132,7 @@ dmypy.json
 !/src/myproject/static/.gitkeep
 
 # Building scripts with sensitive environment variables
-build_local.sh
+build_dev.sh
 build_production.sh
 build_staging.sh
 build_test.sh

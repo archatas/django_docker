@@ -1,23 +1,23 @@
 # Django Docker
 
-## 1. Create executable build_local.sh
+## 1. Create executable build_dev.sh
 
-Copy `build_local_example.sh` to `build_local.sh`.
+Copy `build_dev_example.sh` to `build_dev.sh`.
 
-Edit the `build_local.sh` file and add sensible values there.
+Edit the `build_dev.sh` file and add sensible values there.
 
 Add execution permissions:
 
 ```bash
-$ chmod +x build_local.sh
+$ chmod +x build_dev.sh
 ```
 
 ## 2. Build the Docker containers
 
-Run `build_local.sh`:
+Run `build_dev.sh`:
 
 ```bash
-$ ./build_local.sh
+$ ./build_dev.sh
 ```
 
 ## 3. Check if the build was successful
@@ -35,7 +35,7 @@ This means that you have to create the database user and the database in the Doc
 
 ## 4. Create database user and project database
 
-SSH into the database container and create user and database there with the same values as in the `.build_local.sh` script:
+SSH into the database container and create user and database there with the same values as in the `.build_dev.sh` script:
 
 ```bash
 $ docker exec -it django_docker_db_1 bash
@@ -44,7 +44,7 @@ $ docker exec -it django_docker_db_1 bash
 /$ createdb --username myproject myproject
 ```
 
-When asked, enter the same password for the database as in the `build_local.sh` script.
+When asked, enter the same password for the database as in the `build_dev.sh` script.
 
 Press [Ctrl + D] twice to logout of the postgres user and Docker container.
 
@@ -82,7 +82,7 @@ If you now go to `http://0.0.0.0/admin/`, you should see the Django administrati
 
 ```bash
 $ docker-compose down
-$ ./build_local.sh
+$ ./build_dev.sh
 ```
 
 ### SSH to the Docker images
@@ -103,7 +103,7 @@ $ docker-compose logs db
 
 ## 8. Create analogous scripts for staging, production, and test environments
 
-Copy `build_local.sh` to `build_staging.sh`, `build_production.sh`, and `build_test.sh` and change the environment variables analogously.
+Copy `build_dev.sh` to `build_staging.sh`, `build_production.sh`, and `build_test.sh` and change the environment variables analogously.
 
 ## 9. Feedback
 
