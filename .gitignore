@@ -136,3 +136,6 @@ build_dev.sh
 build_production.sh
 build_staging.sh
 build_test.sh
+
+# PyCharm configuration
+.idea/
