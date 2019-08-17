@@ -138,6 +138,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'site_static'),
+]
+
 with open(os.path.join(BASE_DIR, 'settings', 'last-update.txt'), 'r') as f:
     timestamp = f.readline().strip()
 

@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a17dd3a-3b72-49b1-acb7-30e640e97554" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myproject/myproject/site_static/site/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myproject/myproject/site_static/site/img/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myproject/myproject/site_static/site/img/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myproject/myproject/site_static/site/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myproject/myproject/site_static/site/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myproject/myproject/site_static/site/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myproject/requirements/dev.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myproject/requirements/production.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myproject/requirements/staging.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myproject/requirements/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_local_example.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build_dev_example.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myproject/myproject/settings/local.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/myproject/myproject/settings/dev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_dev_example.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build_dev_example.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myproject/myproject/settings/_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/myproject/myproject/settings/_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myproject/myproject/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/myproject/myproject/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myproject/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/myproject/requirements/_base.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/myproject" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,8 +66,10 @@
       <recent name="$PROJECT_DIR$/src/myproject/myproject/settings" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/myproject" />
       <recent name="$PROJECT_DIR$/src/myproject/myproject/templates" />
+      <recent name="$PROJECT_DIR$/src/myproject/myproject" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/myproject/myproject/settings" />
     </key>
   </component>
@@ -118,7 +132,7 @@
       <workItem from="1564197794606" duration="2371000" />
       <workItem from="1565218386290" duration="287000" />
       <workItem from="1565576375080" duration="1747000" />
-      <workItem from="1565985606715" duration="4165000" />
+      <workItem from="1565985606715" duration="7059000" />
     </task>
     <servers />
   </component>

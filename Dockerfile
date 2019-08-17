@@ -1,6 +1,9 @@
 # pull official base image
 FROM python:3.7
 
+# accept arguments
+ARG PIP_REQUIREMENTS=production.txt
+
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
@@ -21,8 +24,8 @@ WORKDIR /home/myproject
 RUN virtualenv venv
 
 # copy and install pip requirements
-COPY --chown=myproject ./src/myproject/requirements.txt /home/myproject/
-RUN ./venv/bin/pip3 install -r /home/myproject/requirements.txt
+COPY --chown=myproject ./src/myproject/requirements /home/myproject/requirements/
+RUN ./venv/bin/pip3 install -r /home/myproject/requirements/${PIP_REQUIREMENTS}
 
 # copy Django project files
 COPY --chown=myproject ./src/myproject /home/myproject/

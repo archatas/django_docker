@@ -13,7 +13,10 @@ services:
       - gunicorn
 
   gunicorn:
-    build: .
+    build:
+      context: .
+      args:
+        PIP_REQUIREMENTS: "${PIP_REQUIREMENTS}"
     command: bash -c "/home/myproject/venv/bin/gunicorn --workers 3 --bind 0.0.0.0:8000 myproject.wsgi:application"
     depends_on:
       - db
