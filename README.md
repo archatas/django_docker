@@ -64,10 +64,10 @@ SSH into the gunicorn container and run the necessary Django management commands
 
 ```bash
 $ docker exec -it django_docker_gunicorn_1 bash
-$ source venv/bin/activate
-(venv)$ python manage.py migrate
-(venv)$ python manage.py collectstatic
-(venv)$ python manage.py createsuperuser
+$ source env/bin/activate
+(env)$ python manage.py migrate
+(env)$ python manage.py collectstatic
+(env)$ python manage.py createsuperuser
 ```
 
 Answer all the questions asked by the management commands.
