@@ -1,8 +1,8 @@
-version: "3.7"
+version: "3.8"
 
 services:
   nginx:
-    image: nginx:latest
+    image: nginx:1.21
     ports:
       - "80:80"
     volumes:
@@ -37,7 +37,7 @@ services:
       EMAIL_HOST_PASSWORD: "${EMAIL_HOST_PASSWORD}"
 
   db:
-    image: postgres:latest
+    image: postgres:14.1
     restart: always
     environment:
       POSTGRES_DB: "${DATABASE_NAME}"
