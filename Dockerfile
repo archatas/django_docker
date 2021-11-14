@@ -20,12 +20,9 @@ USER myproject
 # set work directory
 WORKDIR /home/myproject
 
-# create and activate virtual environment
-RUN python3 -m venv env
-
-# copy and install pip requirements
+# copy and  install pip requirements
 COPY --chown=myproject ./src/myproject/requirements /home/myproject/requirements/
-RUN ./env/bin/pip3 install -r /home/myproject/requirements/${PIP_REQUIREMENTS}
+RUN pip install -r /home/myproject/requirements/${PIP_REQUIREMENTS}
 
 # copy Django project files
 COPY --chown=myproject ./src/myproject /home/myproject/

@@ -17,7 +17,7 @@ services:
       context: .
       args:
         PIP_REQUIREMENTS: "${PIP_REQUIREMENTS}"
-    command: bash -c "/home/myproject/env/bin/gunicorn --workers 3 --bind 0.0.0.0:8000 myproject.wsgi:application"
+    command: bash -c "/home/myproject/.local/bin/gunicorn --workers 3 --bind 0.0.0.0:8000 myproject.wsgi:application"
     depends_on:
       - db
     volumes:
