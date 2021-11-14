@@ -29,3 +29,4 @@ RUN pip install -r /home/myproject/requirements/${PIP_REQUIREMENTS}
 
 # copy Django project files
 COPY --chown=myproject ./src/myproject /home/myproject/
+RUN mkdir /home/myproject/media /home/myproject/static
