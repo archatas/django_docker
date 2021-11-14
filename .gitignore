@@ -148,12 +148,10 @@ cython_debug/
 # Secrets
 secrets.json
 
-# Building scripts with sensitive environment variables
-build_dev.sh
-build_production.sh
-build_staging.sh
-build_test.sh
-
 # PyCharm
 .idea/
 *.iml
+
+# Sensitive environment variables
+/config/.env*
+!/config/.env-example
