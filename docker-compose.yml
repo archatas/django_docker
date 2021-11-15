@@ -37,7 +37,7 @@ services:
       EMAIL_HOST_PASSWORD: "${EMAIL_HOST_PASSWORD}"
 
   db:
-    image: postgres:14.1
+    image: postgres:13
     restart: always
     environment:
       POSTGRES_DB: "${DATABASE_NAME}"
